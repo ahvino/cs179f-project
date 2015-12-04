@@ -59,6 +59,38 @@
                             <hr>
                         </div>
                     </div>
+                    
+                    <div id="post_4" class="post">
+                        <div class="date">
+                            <span class="day">2</span><br>
+                            <span class="month">Nov</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h1 class="title"> rmdir and my_dir struct</h1>
+                                <h3></h3>
+                                <h6 class="subheader">
+                                    By JS, GBF, MT, CK
+                                </h6>
+                            </div>
+                            <hr>
+                            <div class="article">
+                                <p>
+                                    Completed implementation of rmdir and created the my_dir struct.
+                                    The struct had a mode, access count, flags and an offset. As well,
+                                    we had a pointer to our directory of inodes which was also a struct. 
+                                    rmdir had starts with all our error checking i.e. (is path root, DNE).
+                                    We then call our split function to get the appropriate paths. We then find 
+                                    the location of the dirent and we remove the dirent from the parent followed by
+                                    erasing the inode from the list. 
+                                    
+                                    <img id="logo" src="https://raw.githubusercontent.com/antonvinod/antonvinod.github.io/master/img/github.png">
+            
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
                 </div>
                 <div id="sidebar" class="large-3 columns show-for-xlarge-large-only">
                     <div class="tile">
