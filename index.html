@@ -31,11 +31,125 @@
         <div id="wrapper">
             <div class="row fullwidth">
                 <div id="content" class="small-12 medium-12 large-9 columns">
-                    <div id="post_3" class="post">
+                
+                    <!--<div id="post_3" class="post"> -->
+                      	<!--  
                         <div class="date">
                             <span class="day">9</span><br>
                             <span class="month">Nov</span>
                         </div>
+                        -->
+
+
+
+
+							<div id="post_7" class="post">
+                        <div class="date">
+                            <span class="day">6</span><br>
+                            <span class="month">Dec</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h1 class="title"> Medium and Low priorities</h1>
+                                <h3></h3>
+                                <h6 class="subheader">
+                                    By JS, GBF, MT, CK
+                                </h6>
+                            </div>
+                            <hr>
+                            <div class="article">
+                                <p>
+                                    After finishing the high-priority functions. Chris took it upon himself to implement
+                                    much of the medium and low-priority functions. The rest of the group helped with a lot 
+                                    of the testing of these functions. To date, we now have the following medium priority
+                                    functions: 
+                                </p>
+                                <p>
+												medium: my_access, my_chown, my_chmod.                                
+                                </p>
+                                <p>
+                                		low: my_readlink, my_symlink, my_utime, my_ftruncate, my_truncate, my_statvfs,
+                                		my_lsetxattr, my_lgetxattr, my_llistxattr, my_lremovexattr.
+                                </p>
+                                    <img id="logo" src="https://raw.githubusercontent.com/antonvinod/antonvinod.github.io/master/img/github.png">
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+
+
+
+							<div id="post_6" class="post">
+                        <div class="date">
+                            <span class="day">6</span><br>
+                            <span class="month">Dec</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h1 class="title"> Finishing up</h1>
+                                <h3></h3>
+                                <h6 class="subheader">
+                                    By JS, GBF, MT, CK
+                                </h6>
+                            </div>
+                            <hr>
+                            <div class="article">
+                                <p>
+                                
+                                    We are now mostly finished with the project. We are at the stage of putting
+                                    our finishing touches, finishing our power-point and design document and 
+                                    obviously the website. We will likely create a test script and have a small
+                                    video that shows the project. Links for project details are below:     
+            
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+       
+
+                        
+                    <div id="post_5" class="post">
+                        <div class="date">
+                            <span class="day">5</span><br>
+                            <span class="month">Dec</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h1 class="title"> File and Directory structure</h1>
+                                <h3></h3>
+                                <h6 class="subheader">
+                                    By JS, GBF, MT, CK
+                                </h6>
+                            </div>
+                            <hr>
+                            <div class="article">
+                                <p>
+                                    Completed implementation of rmdir and created the my_dir struct.
+                                    The struct had a mode, access count, flags and an offset. As well,
+                                    we had a pointer to our directory of inodes which was also a struct. 
+                                    rmdir had starts with all our error checking i.e. (is path root, DNE).
+                                    We then call our split function to get the appropriate paths. We then find 
+                                    the location of the dirent and we remove the dirent from the parent followed by
+                                    erasing the inode from the list. 
+                                    
+                                    <img id="logo" src="https://raw.githubusercontent.com/antonvinod/antonvinod.github.io/master/img/github.png">
+            
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>                        
+                        
+                        
+                        
+                    <div id="post_4" class="post">
+                        <div class="date">
+                            <span class="day">5</span><br>
+                            <span class="month">Dec</span>
+                        </div>                                            
                         <div class="content">
                             <div class="title">
                                 <h1 class="title">Progress Report</h1>
@@ -54,13 +168,48 @@
                                     functions and make sure that all tests are passing. After all tests are
                                     passing, we can go back through our functions to determine ways to 
                                     optimize the code.
+                                    
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>     
+                    
+                    
+                    <div id="post_3" class="post">
+                        <div class="date">
+                            <span class="day">2</span><br>
+                            <span class="month">Nov</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h1 class="title"> Updated the File System structure</h1>
+                                <h3></h3>
+                                <h6 class="subheader">
+                                    By JS, GBF, MT, CK
+                                </h6>
+                            </div>
+                            <hr>
+                            <div class="article">
+                                <p>
+                                    
+                                    Our file system is mainly comprised of a struct dirent_frame, class file
+                                    and class ilist. The dirent frame is is our type used in our vector of 
+                                    directory entries. Our class file just holds all the data for a file and 
+                                    our ilist is our list where we map our entries with the ino_t being the key
+                                    and the File as the value. 
+                                    
+                                    <img id="logo" width="" height="" src="">
+            
                                 </p>
                             </div>
                             <hr>
                         </div>
                     </div>
                     
-                    <div id="post_4" class="post">
+                    
+                    
+                    <div id="post_2" class="post">
                         <div class="date">
                             <span class="day">2</span><br>
                             <span class="month">Nov</span>
@@ -91,12 +240,48 @@
                             <hr>
                         </div>
                     </div>
+                    
+
+
+							<div id="post_1" class="post">
+                        <div class="date">
+                            <span class="day">5</span><br>
+                            <span class="month">Oct</span>
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <h1 class="title"> Creating file, inode</h1>
+                                <h3></h3>
+                                <h6 class="subheader">
+                                    By JS, GBF, MT, CK
+                                </h6>
+                            </div>
+                            <hr>
+                            <div class="article">
+                                <p>
+                                    In our original implementation, in order to get started, we needed the
+                                    following: struct my_inode, struct my_file. Our my_inode 
+                                    implementation stored data and file info (inode number, imode, buf vector,
+                                    vector of dirent_buf). Our my_file struct held the permissions flags and 
+                                    access count of a file.  
+                                    
+                                    <img id="logo" src="">          
+
+            
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+
+                    
                 </div>
                 <div id="sidebar" class="large-3 columns show-for-xlarge-large-only">
                     <div class="tile">
                         <div id="description">
                             <h6><a href ="https://github.com/antonvinod">Selik Samai</a></h6>
-                            <h6><a href ="https://www.linkedin.com/in/marcel-tawamba-7a7aa545/en">Marcel Tawamba</a></h6>
+                            <h6><a href ="https://github.com/mtawa002">Marcel Tawamba</a></h6>
                             <h6><a href ="https://github.com/jesuscreyes">Jesus Reyes</a></h6>
                             <h6><a href ="https://github.com/ckotyluk">Chris Kotyluk</a></h6>
                             <h6><a href ="https://github.com/gbeat001">Gregory Beatty-Fechter</a></h6>
